@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar start */
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.2rem 4%;
+background-color: brown ;
+border-bottom: 1px khaki solid;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 99999;
+}
+
+.navbar .logo{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: left;
+}
+
+.navbar .logo a{
+  margin-left: 2rem;
+  font-weight: 700;
+  color: khaki;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navbar .logo img{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.navbar .navbar-nav a{
+  display: inline-block ;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 1rem;
+  color: khaki;
+  font-weight: 600;
+  font-size: 0.8rem;
+  background: 2rem rgb(204, 144, 66);
+  border-radius: 20px;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover{
+  color: rgb(145, 86, 52);
+  font-size: 0.9rem;
+}
+.navbar .navbar-nav a::after{
+  content: '';
+  display: block;
+  border-bottom: 0.1rem solid azure;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+  transform: scaleX(0.5);
+}
+
+#menu{
+  display: none;
+}
+/* navbar end */
+
+.layar-penuh {
+  width: 100%;
+}
+
+/*pengaturan header*/
+header{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+
+header .intro {
+  z-index: 100;
+  color: khaki;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+
+header .intro h3 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(37, 37, 29);
+  opacity: 50%;
+  z-index: -1;
+}
+
+section {
+  padding: 50px 0px 50px 0px;
+}
+section h3 {
+  font-size: 30px;
+  margin: 5px auto;
+}
+section h3::after {
+  content: "";
+  border-bottom: 5px solid rgb(204, 144, 66);
+  width: 52px;
+  display: block;
+  margin: 5px auto;
+}
+#about,
+#content {
+  text-align: center;
+  color: khaki;
+
+}
+section .konten-isi p {
+  font-style: normal;
+  color: rgb(37, 37, 29);
+  margin: 30px auto;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: brown;
+  scroll-behavior: smooth;
+}
+
+section#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+  background-color: #f0e68c;
+}
+section#gallery div {
+  padding: 5px;
+}
+section#gallery div img {
+  height: 100px;
+  border-radius: 5px;
+}
+section#gallery div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content .area {
+  width: 70%;
+  box-shadow: 0px -5px 30px ivory;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px auto;
+  color: khaki;
+}
+#more {
+  display: none;
+}
+.content div.area div {
+  width: 50%;
+}
+.content .area .gambar {
+  border-radius: 5px 0px 0px 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+}
+.content .area .text article {
+  padding: 40px;
+}
+.content .area .text article h4 {
+  margin: 0px;
+  height: 85px;
+}
+.content .area .text article a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+.content .area .text article a:hover {
+  color: bisque;
+}
+footer {
+  padding: 50px 0px 50px 0px;
+  background-color: #343a40;
+  color: #fff;
+}
+footer .layar-dalam {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .layar-dalam div {
+  width: 20%;
+}
+footer .layar-dalam h5 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .layar-dalam .copyright {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #666;
+  text-align: center;
+}
