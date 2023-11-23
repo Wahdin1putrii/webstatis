@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/logo.png">
     <link rel="stylesheet" href="./uts.css">
@@ -14,19 +15,23 @@
 
 
  <!-- Navbar start-->
- <Nav class="navbar">
+ <nav class="navbar">
   <div class="logo">
-      <img src="./images/logo.png" alt="logo">
-      <a href="#home">Historia</a>
+    <img src="./images/logo.png" alt="logo">
+    <a href="#home">Historia</a>
   </div>
   <div class="navbar-nav " id="navbar-nav">
       <a href="#home" >Home</a>
       <a href="#about">About</a>
       <a href="#gallery">Gallery</a>
-      <a href="#content" >Content</a>
+      <a href="#content">Content</a>
       <a href="#contact" >Contact</a>
   </div>
-</Nav>
+
+  <div id="menu" class="menu">
+    <i data-feather="align-justify"></i>
+  </div>
+</nav>
 <!-- navbar end -->
 
 <div class="layar-penuh">
@@ -40,11 +45,11 @@
       <p>Welcome To My Website</p>
     </div>
   </header>
-  <main>
-    <section id="about">
-      <div class="layar-dalam">
-        <h3>About</h3>
-        <div class="konten-isi">
+
+    <section id="about" class="about">
+        <h3><span>About</span></h3>
+        <div class="row">
+        <div class="content">
           <p>
             Penulis merupakan seorang mahasiswi S1 di UIN Syarif Hidayatullah Jakarta.
             Historia merupakan website yang membahas topik mengenai sejarah-sejarah yang ada di Indonesia.
@@ -64,66 +69,200 @@
       <div><img src="./images/pulau setan.jpg"></div>
       <div><img src="./images/danau singkarak.jpg"></div>
     </section>
-    <section class="coklat" id="content">
-      <div class="layar-dalam">
-        <h3>Content</h3>
+
+    <section class="sejarah" class="sejarah">
+      <h3><span> Sejarah MinangKabau Sumatera Barat</span></h3>
+      <div class="row">
+        <div class="sejarah-img">
+          <img src="./images/rumah gadang.jpg" class="thum" alt="sejarah" />
+      </div>
+      <div class="content">
+        <p>
+          Sumatera Barat adalah Propinsi yang mempunyai sejarah panjang, dimana setiap sejarahnya 
+          mempunyai makna tersendiri bagi masyarakat Minangkabau. Siapa yang tidak mengenal suku Minang ?. 
+          Suku ini merupkan salah satu suku yang terkenal dengan cerita rakyatnya yang begitu melegenda 
+          diseluruh tanah air. Suku Minang berada di Sumatera Barat salah satu Propinsi yang terletak di 
+          sepanjang pesisir pulau Sumatera. Padang sebagai ibu kota Sumatera Barat dikenal dengan masakannya 
+          yang khas dan dominan bumbu asli dari rempah-rempah Indonesia.
+        </p>
+        <p>
+          Sejarah bermula pada masa nkerajaan Adityawarman, yang merupakan tokoh penting Minangkabau. Seorang 
+          Raja yang tidak ingin disebut sebagai Raja, pernah memerintah di Pagaruyuang, daerah pusatkerajaan 
+          Minangkabau, selain itu beliau juga orang pertama yang memperkenalkan sistim kerajaan di Sumatera Barat.
+          Sejak Pemerintah Raja Adityawarman tepatnya pertengahan abad ke-17, Propinsi ini lebih terbuka dengan 
+          dunia luar khususnya Aceh. Karena hubungan dengan Aceh yang semakin intensif melalui kegiatan ekonomi 
+          masyarakat, akhirnya mulai berkembang nilai baru yang menjadi landasan sosial budaya masyarakat Sumatera Barat.
+        </p>
+        <a href="#" class="read more">Read More...</a>
+      </div>
+      </div>
+    </section>
+
+    <section id="makanan" class="makanan">
+      <h3><span>Makanan Khas Smuatera Barat</span></h3>
+      <div class="row">
+        <div class="makanan-img">
+          <img src="./images/resep_rendang_sapi.jpg" class="thumb" alt="makanan">
+        </div>
         <div class="content">
-          <div class="area">
-            <div
-              class="gambar"
-              style="background-image: url('./images/rumah\ gadang.jpg')"
-            ></div>
-            <div class="text">
-              <article>
-                <h4><a href="#">Minangkabau-Sumatera Barat</a></h4>
-                  <p>
-                    Sumatera Barat adalah Propinsi yang mempunyai sejarah panjang, 
-                    dimana setiap sejarahnya mempunyai makna tersendiri bagi masyarakat Minangkabau.<span id="dots">...</span><span id="more">
-                      Siapa yang tidak mengenal suku Minang ?. Suku ini merupkan salah satu suku yang terkenal dengan cerita rakyatnya yang begitu melegenda diseluruh tanah air. Suku Minang berada di Sumatera Barat salah satu Propinsi yang terletak di sepanjang pesisir pulau Sumatera. Padang sebagai ibu kota Sumatera Barat dikenal dengan masakannya yang khas dan dominan bumbu asli dari rempah – rempah Indonesia.
-                      Sejarah bermula pada masa nkerajaan Adityawarman, yang merupakan tokoh penting Minangkabau. Seorang Raja yang tidak ingin disebut sebagai Raja, pernah memerintah di Pagaruyuang, daerah pusatkerajaan Minangkabau, selain itu beliau juga orang pertama yang memperkenalkan sistim kerajaan di Sumatera Barat.
-                      Sejak Pemerintah Raja Adityawarman tepatnya pertengahan abad ke – 17, Propinsi ini lebih terbuka dengan dunia luar khususnya Aceh. Karena hubungan dengan Aceh yang semakin intensif melalui kegiatan ekonomi masyarakat, akhirnya mulai berkembang nilai baru yang menjadi landasan sosial budaya masyarakat Sumatera Barat.
-                      Agama Islam sebagai nilai baru tersebut berkembang dikalangan masyarakat dan berangsur- angsur mendominasi masyarakat Minangkabau yang sebelumnya didominasi agama Budha. Selain itu sebagian kawasan di Sumatera Barat yaitu pesisir pantai masih berada dibawah kekuasaan kerajaan Pagaruyung, namun kemudian bagian dari kesultanan Aceh.
-                      Melirik sejarah singkat Minangkabau, merupakan salah satu desa yang berada dikawasan Kecamatan Sungayang, Tanah Datar, Sumatera Barat. Desa tersebut awalnya merupakan tanah lapang. Namun karena adanya isu yang berkembang bahwa kerajan Pagaruyuang akan diserang kerajaan Majapahit dari daerah Jawa maka terjadilah peristiwa adu kerbau atas usul kedua belah pihak. Kerbau terebut mewakili perperangan kedua kerajaan. Karena kerbau Minang berhasil memenangkan perkelahian maka muncul kata manang kabau yang selanjutnya dijadikan nama Nagari atau desa tersebut.
-                      Penduduk Sumatera Barat dihuni oleh mayoritas oleh suku Minangkabau. Selain suku Minang, diwilayah Pasan dihuni oleh Suku Mandailing dan suku Batak. Awal munculnya penduduk suku tersebut pada abad ke 18 masa Perang Paderi. Daerah Padang Gelugur, Luang Silaut dan Sitiung yang merupakan daerah transmigasi terdapat juga suku Jawa. Sebagian di daerah tersebut terdapat penduduk Imigran keturunan Suriname yang kembali memilih pulang ke Indonesia pada akhir 1950 an. Para imigran tersebut ditepatkan di daerah Sitiung. Mayoritas penduduk suku Mentawai juga berdomisili di kepulauan Mentawai dan sangat jarang di temui penduduk suku Minangkabau. Beberapa suku lainnya seperti etnis Tionghoa memilih menetap di Kota – kota besar seperti Bukittinggi, Padang dan Payakumbuh. Suku Nias dan Tamil sendiri berada di daerah Pariaman dan Padang walaupun dalam jumlah yang sedikit.(TGA)
-                    </span></p>
-                    <button onclick="myFunction()" id="myBtn">Read more</button>
-                  </article>
-            </div>
-          </div>
-          <div class="area">
-            <div
-              class="gambar"
-              style="background-image: url('./images/rendang.webp')"
-            ></div>
-            <div class="text">
-              <article>
-                <h4><a href="#">Makanan Khas Sumatera Barat</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat, est omnis? Quas reprehenderit rem nesciunt.
-                </p>
-              </article>
-            </div>
-          </div>
-          <div class="area">
-            <div
-              class="gambar"
-              style="background-image: url('./images/Pantai-Nirwana-2.jpg')"
-            ></div>
-            <div class="text">
-              <article>
-                <h4><a href="#">Wisata Sumatera Barat</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat, est omnis? Quas reprehenderit rem nesciunt.
-                </p>
-              </article>
-            </div>
-          </div>
+          <p>
+            Makanan minang banyak dikenal oleh masyarakat karena memiliki cita rasa yang khas dan lezat. 
+            Tidak hanya nasi padang, ternyata masih banyak sekali makanan khas Padang yang memiliki cita 
+            rasa yang nikmat dan wajib kamu coba.
+          </p>
+          <p>
+            Makanan Sumatera Barat adalah jenis kuliner yang berkembang di provinsi Sumatera Barat. 
+            Produk kuliner Sumatera Barat merupakan salah satu yang dikenal luas di Indonesia dan disebut 
+            juga dengan istilah Masakan Minangkabau yang diperkenalkan oleh para perantau Minangkabau 
+            dari berbagai daerah di Sumatera Barat. Terdapat banyak resep dan variasi masakan Sumatera Barat 
+            berdasarkan daerah, kota atau kabupatennya, antara lain Bukittinggi, Padang, Padang Panjang, 
+            Payakumbuh, Solok, Pesisir Selatan, Batusangkar, Agam, Dharmasraya dan sebagainya. Meskipun 
+            beraneka ragam masakan Minangkabau bukan hanya berasal dari kota Padang, Masakan Sumatera Barat 
+            telah terlanjur dikenal masyarakat awam dengan sebutan Masakan Padang. Makanan Sumatera Barat dikenal 
+            banyak menggunakan santan dan daging, memiliki rasa pedas dari penggunaaan bumbu dan rempah-rempah. 
+          </p>
+          <a href="#" class="read more">Read More...</a>
         </div>
       </div>
     </section>
-  </main>
+
+    <section id="wisata" class="wisata">
+      <h3><span>Wisata Sumatera Barat</span></h3>
+      <div class="row">
+        <div class="wisata-img">
+          <img src="./images/kelok 9.jpg" class="thumb" alt="wisata">
+        </div>
+        <div class="content">
+          <p>
+            Sumatera barat merupakan provinsi di Pulau Sumatera yang berada di pesisir selatan. 
+            Sumatera Barat yang sering di singkat Sumbar berada di barat bukit barisan sehingga 
+            memiliki bentuk geografis yang bergelombang berupa perbukitan dan pegunungan.Dengan 
+            terkenalnya wisata Sumatera Barat bernuansa alam, banyak para wisatawan baik lokal 
+            maupun mancanegara untuk datang ke Ranah Minang tersebut. Tak hanya itu, wisata 
+            Sumatera Barat juga terkenal dengan objek wisata budaya dan sejarahnya.
+          </p>
+          <p>
+            Wisata Sumatera Barat memiliki keunikan dan daya tarik tersendiri, mulai dari bangunan 
+            bersejarah, pantai, pegunungan, hingga danaunya. Semua tempat wisata Sumatera Barat 
+            menawarkan berbagai destinasi yang menyenangkan.
+          </p>
+          <a href="#" class="read more">Read More...</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="photo-detail" id="photo-detail">
+      <div class="container">
+        <a href="#"><i data-feather="x" class="close-icon"></i></a>
+        <div class="content-container">
+          <div class="image">
+            <img src="./images/rumah gadang.jpg" alt="sejarah" />
+          </div>
+          <div class="content-img">
+            <h4>Sejarah Minangkabau Sumatera Barat</h4>
+            <p>
+              Sumatera Barat adalah Propinsi yang mempunyai sejarah panjang, dimana setiap sejarahnya 
+              mempunyai makna tersendiri bagi masyarakat Minangkabau. Siapa yang tidak mengenal suku Minang ?. 
+              Suku ini merupkan salah satu suku yang terkenal dengan cerita rakyatnya yang begitu melegenda 
+              diseluruh tanah air. Suku Minang berada di Sumatera Barat salah satu Propinsi yang terletak di 
+              sepanjang pesisir pulau Sumatera. Padang sebagai ibu kota Sumatera Barat dikenal dengan masakannya 
+              yang khas dan dominan bumbu asli dari rempah-rempah Indonesia.
+            </p>
+            <p>
+              Sejarah bermula pada masa nkerajaan Adityawarman, yang merupakan tokoh penting Minangkabau. Seorang 
+              Raja yang tidak ingin disebut sebagai Raja, pernah memerintah di Pagaruyuang, daerah pusatkerajaan 
+              Minangkabau, selain itu beliau juga orang pertama yang memperkenalkan sistim kerajaan di Sumatera Barat.
+              Sejak Pemerintah Raja Adityawarman tepatnya pertengahan abad ke-17, Propinsi ini lebih terbuka dengan 
+              dunia luar khususnya Aceh. Karena hubungan dengan Aceh yang semakin intensif melalui kegiatan ekonomi 
+              masyarakat, akhirnya mulai berkembang nilai baru yang menjadi landasan sosial budaya masyarakat Sumatera Barat.
+            </p>
+            <p>
+              Dilihat dari sejarah singkat Minangkabau, merupakan salah satu desa yang berada dikawasan Kecamatan Sungayang, 
+              Tanah Datar, Sumatera Barat. Desa tersebut awalnya merupakan tanah lapang. Namun karena adanya isu yang 
+              berkembang bahwa kerajan Pagaruyuang akan diserang kerajaan Majapahit dari daerah Jawa maka terjadilah 
+              peristiwa adu kerbau atas usul kedua belah pihak. Kerbau terebut mewakili perperangan kedua kerajaan. 
+              Karena kerbau Minang berhasil memenangkan perkelahian maka muncul kata manang kabau yang selanjutnya 
+              dijadikan nama Nagari atau desa tersebut.
+            </p>
+            <p>
+              Untuk Info Selengkapnya mengenai sejarah Minangkabau kalian bisa mengunjungi website
+              <a href="https://sumbarprov.go.id/home/news/9280-asal-usul-sumatera-barat-sejarah-minang-kabau">disini ya!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="photo-detail" id="photo-detail">
+      <div class="container">
+        <a href="#"><i data-feather="x" class="close-icon"></i></a>
+        <div class="content-container">
+          <div class="image">
+            <img src="./images/resep_rendang_sapi.jpg" alt="makanan" />
+          </div>
+          <div class="content-img">
+            <h4>Makanan Khas Sumatera Barat</h4>
+            <p>
+              Makanan Minang-Sumatera Barat banyak dikenal oleh masyarakat karena memiliki cita rasa yang khas dan lezat. 
+              Tidak hanya nasi padang, ternyata masih banyak sekali makanan khas Padang yang memiliki cita 
+              rasa yang nikmat dan wajib kamu coba.
+            </p>
+            <p>
+             Makanan Sumatera Barat adalah jenis kuliner yang berkembang di provinsi Sumatera Barat. 
+             Produk kuliner Sumatera Barat merupakan salah satu yang dikenal luas di Indonesia dan disebut 
+             juga dengan istilah Masakan Minangkabau yang diperkenalkan oleh para perantau Minangkabau 
+             dari berbagai daerah di Sumatera Barat. Terdapat banyak resep dan variasi masakan Sumatera Barat 
+             berdasarkan daerah, kota atau kabupatennya, antara lain Bukittinggi, Padang, Padang Panjang, 
+             Payakumbuh, Solok, Pesisir Selatan, Batusangkar, Agam, Dharmasraya dan sebagainya. Meskipun 
+             beraneka ragam masakan Minangkabau bukan hanya berasal dari kota Padang, Masakan Sumatera Barat 
+             telah terlanjur dikenal masyarakat awam dengan sebutan Masakan Padang. Makanan Sumatera Barat dikenal 
+             banyak menggunakan santan dan daging, memiliki rasa pedas dari penggunaaan bumbu dan rempah-rempah. 
+            </p>
+            <p>
+              Provinsi yang disebut-sebut sebagai surganya wisatawan ini, makanan khasnya identik dengan masakan Minang. 
+              Makanan khas Sumatera Barat yang paling terkenal adalah rendang.Untuk info selengkapnya mengenai makanan khas
+              Sumatera Barat,kalian bisa mengunjungi website
+              <a href="https://www.liputan6.com/hot/read/5283524/21-makanan-khas-sumatera-barat-yang-paling-terkenal-wajib-dicoba">disini ya!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="photo-detail" id="photo-detail">
+      <div class="container">
+        <a href="#"><i data-feather="x" class="close-icon"></i></a>
+        <div class="content-container">
+          <div class="image">
+            <img src="./images/kelok 9.jpg" alt="wisata">
+          </div>
+          <div class="content-img">
+            <h4>Wisata Sumatera Barat</h4>
+            <p>Wisata Sumatera Barat</p>
+            <p>
+              Sumatera barat merupakan provinsi di Pulau Sumatera yang berada di pesisir selatan. 
+              Sumatera Barat yang sering di singkat Sumbar berada di barat bukit barisan sehingga 
+              memiliki bentuk geografis yang bergelombang berupa perbukitan dan pegunungan.Dengan 
+              terkenalnya wisata Sumatera Barat bernuansa alam, banyak para wisatawan baik lokal 
+              maupun mancanegara untuk datang ke Ranah Minang tersebut. Tak hanya itu, wisata 
+              Sumatera Barat juga terkenal dengan objek wisata budaya dan sejarahnya.
+            </p>
+            <p>
+              Wisata Sumatera Barat memiliki keunikan dan daya tarik tersendiri, mulai dari bangunan 
+              bersejarah, pantai, pegunungan, hingga danaunya. Semua tempat wisata Sumatera Barat 
+              menawarkan berbagai destinasi yang menyenangkan.
+            </p>
+            <p>
+              Terdapat berbagai objek wisata yang bisa dinikmati saat berkunjung ke sejumlah daerah yang ada di Sumbar.
+              Untuk mengetahui info selanjutnya tentang wisata apa saja yang ada di Sumatera Barat, kalian bisa mengunjungi
+              website
+              <a href="https://wisatasumatera.com/tempat-wisata-sumatera-barat-terbaru/">disini ya!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <footer id="contact">
     <div class="layar-dalam">
       <div>
@@ -148,6 +287,10 @@
     </div>
   </footer>
 </div>
+
+<script>
+  feather.replace();
+</script>
     
 <script src="./uts.js"></script>
 </body>
