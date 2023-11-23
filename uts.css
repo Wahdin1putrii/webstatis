@@ -3,28 +3,33 @@
   padding: 0;
 }
 
-/* navbar start */
-.navbar{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0.2rem 4%;
-background-color: brown ;
-border-bottom: 1px khaki solid;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-z-index: 99999;
+html {
+  margin: 0;
+  padding: 0;
+  background-color: brown;
+  scroll-behavior: smooth;
 }
 
+/* navbar start */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 4%;
+  background-color: brown;
+  border-bottom: 1px khaki solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
 .navbar .logo{
   display: flex;
   position: relative;
   align-items: center;
   justify-content: left;
 }
-
 .navbar .logo a{
   margin-left: 2rem;
   font-weight: 700;
@@ -34,13 +39,11 @@ z-index: 99999;
   justify-content: center;
   text-decoration: none;
 }
-
 .navbar .logo img{
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
 }
-
 .navbar .navbar-nav a{
   display: inline-block ;
   position: relative;
@@ -51,24 +54,22 @@ z-index: 99999;
   color: khaki;
   font-weight: 600;
   font-size: 0.8rem;
-  background: 2rem rgb(204, 144, 66);
+  background: 2rem #15222c17;
   border-radius: 20px;
   padding: 8px 10px;
   text-decoration: none;
 }
-
 .navbar .navbar-nav a:hover{
-  color: rgb(145, 86, 52);
+  color: burlywood;
   font-size: 0.9rem;
 }
 .navbar .navbar-nav a::after{
   content: '';
   display: block;
-  border-bottom: 0.1rem solid azure;
+  border-bottom: 0.1rem solid bisque;
   transform: scaleX(0);
   transition: 0.2s linear;
 }
-
 .navbar .navbar-nav a:hover::after{
   transform: scaleX(0.5);
 }
@@ -76,6 +77,7 @@ z-index: 99999;
 #menu{
   display: none;
 }
+
 /* navbar end */
 
 .layar-penuh {
@@ -124,38 +126,83 @@ header .overlay {
   z-index: -1;
 }
 
-section {
-  padding: 50px 0px 50px 0px;
-}
-section h3 {
-  font-size: 30px;
-  margin: 5px auto;
-}
-section h3::after {
-  content: "";
-  border-bottom: 5px solid rgb(204, 144, 66);
-  width: 52px;
-  display: block;
-  margin: 5px auto;
-}
-#about,
-#content {
-  text-align: center;
-  color: khaki;
+.about,
+  .sejarah,
+  .makanan,
+  .wisata {
+    padding: 8rem 7% 1.4rem;
+  }
+  
+  .about h3,
+  .sejarah h3,
+  .makanan h3,
+  .wisata h3 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about .row,
+  .sejarah .row,
+  .makanan .row,
+  .wisata .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .about .row .about-img,
+  .sejarah .row .sejarah-img,
+  .makanan .row .makanan-img,
+  .wisata .row .wisata-img {
+    flex: 1 1 30rem;
+  }
+  
+  .about .row .about-img img,
+  .sejarah .row .sejarah-img img,
+  .makanan .row .makanan-img img,
+  .wisata .row .wisata-img img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: fill;
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    margin-bottom: 2rem;
+    border-radius: 7%;
+  }
+  
+  .about .row .content,
+  .sejarah .row .content,
+  .makanan .row .content,
+  .wisata .row .content {
+    flex: 3 1 30rem;
+    padding: 0 1rem;
+    padding-left: 1.4rem;
+    margin-top: -2rem;
+  }
+  
+  .about .row .content p,
+  .sejarah .row .content p,
+  .makanan .row .content p,
+  .wisata .row .content p {
+    text-align: justify;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.6;
+    line-height: 1;
+  }
+  
+  .sejarah .row .content a,
+  .makanan .row .content a,
+  .wisata .row .content a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 100;
+    /* color: #fff; */
+  }
 
-}
-section .konten-isi p {
-  font-style: normal;
-  color: rgb(37, 37, 29);
-  margin: 30px auto;
-}
-
-html {
-  margin: 0;
-  padding: 0;
-  background-color: brown;
-  scroll-behavior: smooth;
-}
 
 section#gallery {
   display: flex;
@@ -176,50 +223,68 @@ section#gallery div img:hover {
   transition: all 0.2s ease-in-out;
   transform: scale(1.1);
 }
-.content {
+
+.photo-detail {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(1, 1, 1, 0.9);
+  overflow: auto;
+}
+.photo-detail .close-icon {
+  right: 5rem;
+  top: 7rem;
+  position: absolute;
+  z-index: 9999;
+  color: var(--primary);
+}
+.photo-detail .container .content-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  height: auto;
+  background-color: #fff;
+  margin: 10% 10%;
+  /* margin: 10% 10% auto; */
+  /* margin-bottom: 90%; */
+  animation: animationPhotoDetail 0.8s;
 }
 
-.content .area {
-  width: 70%;
-  box-shadow: 0px -5px 30px ivory;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 40px auto;
-  color: khaki;
+.photo-detail .container .content-container .image {
+  flex: 1 1 40%;
+  flex-grow: 4;
 }
-#more {
-  display: none;
+
+.photo-detail .container .content-container .image img {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
 }
-.content div.area div {
-  width: 50%;
+.photo-detail .container .content-container .content-img {
+  flex: 1 1 40%;
+  /* flex-grow: 6; */
+  padding: 0 1rem;
 }
-.content .area .gambar {
-  border-radius: 5px 0px 0px 5px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 320px;
+.photo-detail .container .content-container .content-img h4 {
+  color: black;
+  font-size: 1rem;
+  margin-top: 15px;
 }
-.content .area .text article {
-  padding: 40px;
+
+.photo-detail .container .content-container .content-img p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  padding-top: 1rem;
+  text-align: justify;
+  color: black;
 }
-.content .area .text article h4 {
-  margin: 0px;
-  height: 85px;
+.photo-detail .photo-container .photo-content {
+  flex-wrap: wrap;
 }
-.content .area .text article a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.5s ease;
-}
-.content .area .text article a:hover {
-  color: bisque;
-}
+
 footer {
   padding: 50px 0px 50px 0px;
   background-color: #343a40;
